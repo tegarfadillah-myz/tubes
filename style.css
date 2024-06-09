@@ -55,7 +55,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #fff6e0;
   text-decoration: none;
   font-size: 20px;
   position: relative;
@@ -85,8 +85,9 @@ nav ul li a {
 
 .pasphoto img {
   clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
-  background-color: #61677a;
+  background-image: linear-gradient(to right, #3b343c, #61677a, #3b343c);
   border-radius: 10%;
+  border: 0.1px solid #413a41;
 }
 
 #materi {
@@ -137,9 +138,6 @@ nav ul li a {
   flex-basis: 35%;
 }
 
-.contact-right {
-  flex-basis: 60%;
-}
 
 .contact-left p {
   margin-top: 30px;
@@ -158,7 +156,7 @@ nav ul li a {
 .social-icons a {
   text-decoration: none;
   font-size: 70px;
-  margin-right: 15px;
+  margin: 0px 5px;
   color: #61677a;
   display: inline-block;
   transform: transform 0.5s;
@@ -171,6 +169,7 @@ nav ul li a {
 
 .btn-div {
   text-align: center;
+  font-size: 12px;
 }
 
 .btn {
@@ -217,12 +216,7 @@ nav ul li a {
 }
 
 
-.nav-materi h2 a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 30px;
-  position: relative;
-}
+
 
 .content {
   padding: 30px 5%;
@@ -266,4 +260,141 @@ nav ul li a {
 .pict img {
   width: 100%;
   border-radius: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens smaller than or equal to 768px */
+  .container{
+    padding: 50px 5%;
+  }
+
+  .nav-home{
+    padding: 10px 5%;
+  }
+  .logo {
+    font-size: 12px;
+  }
+  .nav-home a {
+    font-size: 12px;
+  }
+  .sub-title {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .social-icons a {
+    font-size: 50px;
+  }
+  .btn {
+    background: #61677a;
+    display: inline-block;
+    margin: 15px auto;
+    width: fit-content;
+    padding: 14px 5px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff6e0;
+  }
+  .row{
+    flex-direction: column;
+    padding-top: 30px;
+  }
+
+  .perkenalan{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .perkenalan h1{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .pasphoto{
+    flex-basis: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  .pasphoto img {
+    width: 90%; /* adjust this value as needed */
+    height: auto; /* maintain the aspect ratio */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    border-radius: 10%;
+    
+  }
+  
+  #materi {
+    padding: 50px 0 0 0;
+    margin-bottom: 0px;
+  }
+  .contact-left, .contact-right {
+    flex-basis: 100%;
+  }
+
+  /* materi */
+  #judul {
+    padding-top: 60px;
+  }
+  .container-materi{
+    padding: 0px 5%;
+  }
+  .container-materi .sub-title{
+    padding-bottom: 30px;
+    font-size: 30px;
+  }
+  
+  .container-isi {
+    padding: 10px 5%;
+  }
+  
+  
+  .content {
+    padding: 30px 5%;
+    background-color: #21201e;
+    border: 0.1px solid #3e373e;
+    border-radius: 50px;
+  }
+  .content p{
+    margin: 10px 0;
+    font-size: 10px;
+  }
+  
+  #pembahasan {
+    padding: 10px;
+  }
+  
+  .row-isi {
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .isi {
+    width: 100%;
+    text-align: justify;
+    padding: 0 10px;
+  }
+  .isi h1 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #d8d9da;
+  }
+  .isi p {
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: #d8d9da;
+  }
+  
+  .pict {
+    width: 100%;
+    text-align: justify;
+    padding: 0 10px;
+  }
+  
+  .pict img {
+    width: 100%;
+    border-radius: 10px;
+  }
 }
