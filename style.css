@@ -11,6 +11,7 @@ html {
 body {
   background-image: linear-gradient(to right, #3b343c, #21201e, #3b343c);
   color: #fff6e0;
+  overscroll-behavior: none;
 }
 
 #home {
